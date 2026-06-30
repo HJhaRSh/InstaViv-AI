@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/Instaviv_logo.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="InstaViv AI - Inculcating AI as a skill, at a young age. We design and deploy hands-on AI learning labs and courses for schools and colleges." />
+    <title>InstaViv AI | AI as a Skill</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Global Dynamic Particle Background -->
+    <div class="aurora-bg">
+      <div class="aurora-blob blob-1"></div>
+      <div class="aurora-blob blob-2"></div>
+      <div class="aurora-blob blob-3"></div>
+    </div>
+    <canvas id="bg-canvas" class="global-bg-canvas"></canvas>
+
+    <!-- 1. Sticky Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <img src="/Instaviv_logo.jpeg" alt="InstaViv AI Logo" class="logo-img">
+          InstaViv AI
+        </a>
+        <nav class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#labs">Infrastructure</a>
+          <a href="#work">Our Work</a>
+          <a href="#impact">Impact</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary">Bring AI to Your Campus</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-v2" id="hero">
+      
+      <!-- Left: Half cut 3D image -->
+      <div class="hero-half-img-positioner">
+        <div class="hero-half-img reveal delay-1">
+          <img src="/hero_centerpiece_transparent.png" alt="AI Robot Centerpiece" id="robot-avatar">
+          
+          <!-- Futuristic connected line and box -->
+          <div class="init-ai-container" id="init-ai-wrapper">
+            <svg class="init-ai-svg" width="180" height="42">
+              <defs>
+                <filter id="line-glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="2" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+              <!-- 45-degree angled sci-fi line -->
+              <polyline points="0,1 60,1 100,41 180,41" fill="none" stroke="var(--text-primary)" stroke-width="1.5" filter="url(#line-glow)"/>
+              <circle cx="3" cy="1" r="3.5" fill="var(--text-primary)" filter="url(#line-glow)"/>
+            </svg>
+            
+            <div class="init-ai-pos sci-fi-box" id="init-ai-btn" style="transition: opacity 0.3s;">
+              <div class="sci-fi-box-inner" style="white-space: nowrap;">
+                <span class="pulse-dot"></span> INITIALIZE AI
+              </div>
+            </div>
+            
+            <!-- Grouped Speech & Chat UI to prevent overlap -->
+            <div class="init-ai-pos" style="display: flex; flex-direction: column; gap: 15px;">
+              <div class="sci-fi-box" id="avatar-speech-wrapper" style="opacity: 0; pointer-events: none; transition: opacity 0.3s;">
+                <div class="sci-fi-box-inner" style="width: 320px; line-height: 1.6;">
+                  <div id="avatar-speech-hud" style="max-height: 250px; overflow-y: auto; pointer-events: auto; padding-right: 5px; display: flex; flex-direction: column; gap: 8px;"></div>
+                </div>
+              </div>
+
+              <!-- New Chat Input UI -->
+              <div class="sci-fi-box" id="avatar-chat-wrapper" style="opacity: 0; pointer-events: none; transition: opacity 0.3s;">
+                <div class="sci-fi-box-inner" style="width: 320px; padding: 0.5rem; display: flex; gap: 8px;">
+                  <input type="text" id="chat-input" placeholder="Message AI..." style="background: transparent; border: none; color: var(--text-primary); outline: none; width: 100%; font-family: var(--font-tech); font-size: 0.8rem; letter-spacing: 1px; padding-left: 10px;" autocomplete="off" />
+                  <button id="chat-mute" style="background: transparent; border: 1px solid var(--electric-cyan); padding: 4px 6px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--electric-cyan); border-radius: 2px;">MUTE</button>
+                  <button id="chat-send" style="background: var(--electric-cyan); border: none; padding: 4px 10px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: #000; border-radius: 2px;">SEND</button>
+                  <button id="chat-stop" style="background: var(--warm-coral); border: none; padding: 4px 10px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: #000; border-radius: 2px; display: none;">STOP</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dynamic Content -->
+      <div class="container hero-split-container">
+        <div class="hero-right-content reveal delay-2">
+          <h1 class="hero-main-title">
+            <span class="highlight-cyan text-glow">AI as a Skill.</span><br>
+            <span class="text-outline" style="font-size: 0.85em; opacity: 0.8;">Built Into the</span><br>
+            <span id="dynamic-text">Next Generation.</span>
+          </h1>
+          <p class="hero-description">
+            InstaViv AI designs and deploys <span class="text-highlight">hands-on AI learning labs</span>, courses, and <span class="text-highlight">immersive experiential infrastructure</span> for schools, colleges, and institutions.
+          </p>
+          <div class="hero-tagline">
+            Where Students Become Creators of Their Own Future.
+          </div>
+          
+          <div class="hero-buttons reveal delay-3">
+          <a href="#courses" class="sci-fi-box">
+            <div class="sci-fi-box-inner">Explore Courses</div>
+          </a>
+          <a href="#impact" class="sci-fi-box">
+            <div class="sci-fi-box-inner">See Our Department</div>
+          </a>
+        </div>
+          
+          <!-- Decorative tech element -->
+          <div class="hero-stats-row mt-4">
+            <div class="stat-item">
+              <span class="stat-num highlight-cyan"><span id="stat-counter">0</span>%</span>
+              <span class="stat-label">Live Deployable Models</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-real" style="color: var(--warm-coral); display: inline-block;">Real</span>
+              <span class="stat-label">Time Avatars</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Vision & Mission (Removed as per user request) -->
+
+    <!-- 4. What We Offer / Courses -->
+    <section class="courses section-padding" id="courses">
+      <div class="container">
+        <h2 class="section-title reveal">Educational Courses</h2>
+        <div class="course-grid">
+          <!-- Avatar & Real-Time AI Lab -->
+          <div class="course-card glass-card reveal">
+            <div class="course-img-wrapper">
+              <img src="/course_avatar_1782815456531.png" alt="Avatar AI Lab" class="course-img">
+            </div>
+            <div class="course-info">
+              <h3>Avatar & Real-Time AI Lab</h3>
+              <p>Build interactive 3D AI avatars using LLM + Deep Fake tech. Modules include Lawyer LLM, CA LLM for GST, and Career Guidance.</p>
+            </div>
+          </div>
+          
+          <!-- Computer Vision Zone -->
+          <div class="course-card glass-card reveal delay-1">
+            <div class="course-img-wrapper">
+              <img src="/course_cv_1782815467304.png" alt="Computer Vision Zone" class="course-img">
+            </div>
+            <div class="course-info">
+              <h3>Computer Vision Zone</h3>
+              <p>Face-based heart-rate detection, line/wait-time detection, closed-eye detection, NLP & Interaction AI design.</p>
+            </div>
+          </div>
+
+          <!-- Smart Mirror Experiential AI -->
+          <div class="course-card glass-card reveal delay-2">
+            <div class="course-img-wrapper">
+              <img src="/course_mirror_1782815486377.png" alt="Smart Mirror" class="course-img">
+            </div>
+            <div class="course-info">
+              <h3>Smart Mirror Experiential AI</h3>
+              <p>Large rear-projection interactive smart mirror with LiDAR, thermal & camera sensors. Deploy and modify live AI models.</p>
+            </div>
+          </div>
+
+          <!-- RAG & Agentic AI -->
+          <div class="course-card glass-card reveal">
+            <div class="course-img-wrapper">
+              <img src="/course_rag_1782815497609.png" alt="RAG and Agentic AI" class="course-img">
+            </div>
+            <div class="course-info">
+              <h3>RAG & Agentic AI</h3>
+              <p>Upload custom data, build Vector DBs, create RAG pipelines, train & validate models directly from a UI.</p>
+            </div>
+          </div>
+
+          <!-- Full Deployment Infrastructure -->
+          <div class="course-card glass-card reveal delay-1">
+            <div class="course-img-wrapper">
+              <!-- ADD: deployment infra image -->
+              <div class="placeholder-img"><span>Deployment Infra</span></div>
+            </div>
+            <div class="course-info">
+              <h3>Full Deployment Infrastructure</h3>
+              <p>Learn end-to-end deployment of avatars and agents, real-time processing, and performance bottlenecks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Labs & Infrastructure -->
+    <section class="labs section-padding light-section" id="labs">
+      <div class="container">
+        <h2 class="section-title reveal dark-text">Labs & Infrastructure</h2>
+        <div class="lab-showcase">
+          <div class="lab-item reveal">
+            <!-- ADD: Lab showcase image here -->
+            <div class="placeholder-img large"><span>Rear-Projector Smart Interactive Mirror (8ft × 6ft display)</span></div>
+          </div>
+          <div class="lab-specs reveal delay-1">
+            <ul>
+              <li><strong>AI Character Creation Station:</strong> 24GB VRAM NVIDIA workstation</li>
+              <li><strong>Portable CV Zone:</strong> Wireless, futuristic re-designed zone with wheels/base</li>
+              <li><strong>Cloud-Connected:</strong> Students can deploy from any device anywhere</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Student Learning Achievements -->
+    <section class="achievements section-padding" id="achievements">
+      <div class="container">
+        <h2 class="section-title reveal">Student Learning Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card reveal">
+            <div class="icon">📊</div>
+            <p>In-depth knowledge of datasets, extraction, preparation & visualisation</p>
+          </div>
+          <div class="achievement-card reveal delay-1">
+            <div class="icon">🧠</div>
+            <p>Algorithm-selection intuition across diverse problems</p>
+          </div>
+          <div class="achievement-card reveal delay-2">
+            <div class="icon">🚀</div>
+            <p>Exposure to upcoming high-impact AI areas</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="icon">💡</div>
+            <p>Capacity for focused innovation & sustainable differentiation</p>
+          </div>
+          <div class="achievement-card reveal delay-1">
+            <div class="icon">🔬</div>
+            <p>Foundation for research and path-defining AI</p>
+          </div>
+          <div class="achievement-card reveal delay-2">
+            <div class="icon">👨‍🏫</div>
+            <p>Instructor upskilling for intuition-led teaching</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Our Work / Deployments -->
+    <section class="work section-padding light-section" id="work">
+      <div class="container">
+        <h2 class="section-title reveal dark-text">Flagship Deployments</h2>
+        <div class="deployments-grid">
+          <div class="deployment-card reveal">
+            <!-- ADD: project image -->
+            <div class="placeholder-img"><span>Mayo College</span></div>
+            <div class="deployment-info">
+              <h3>Mayo College, Ajmer</h3>
+              <p>Multi-phase AI lab deployment: Smart Mirror Experiential AI + Computer Vision Zone upgrade with RAG/Agentic AI.</p>
+            </div>
+          </div>
+          <div class="deployment-card reveal delay-1">
+            <!-- ADD: project image -->
+            <div class="placeholder-img"><span>Baramati</span></div>
+            <div class="deployment-info">
+              <h3>Baramati, Maharashtra</h3>
+              <p>Science & Innovation Centre AI deployment.</p>
+            </div>
+          </div>
+          <div class="deployment-card reveal delay-2">
+            <!-- ADD: project image -->
+            <div class="placeholder-img"><span>Akola College</span></div>
+            <div class="deployment-info">
+              <h3>College in Akola</h3>
+              <p>AI lab / education deployment.</p>
+            </div>
+          </div>
+          <div class="deployment-card reveal">
+            <!-- ADD: project image -->
+            <div class="placeholder-img"><span>ISRO Globe</span></div>
+            <div class="deployment-info">
+              <h3>ISRO — Spatial AI "Real-Life Globe"</h3>
+              <p>Built a 3D AI geospatial globe platform demonstrating real-world spatial AI capability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SDG Impact -->
+    <section class="impact section-padding" id="impact">
+      <div class="container">
+        <h2 class="section-title reveal">Achieving UN SDGs</h2>
+        <div class="impact-grid">
+          <div class="impact-category reveal">
+            <h3 class="impact-title">Skilling in AI</h3>
+            <p>SDG 4: Quality Education<br>SDG 8: Decent Work & Growth<br>SDG 9: Industry/Innovation<br>SDG 10: Reduced Inequalities</p>
+          </div>
+          <div class="impact-category reveal delay-1">
+            <h3 class="impact-title">Climate, Ag, Health</h3>
+            <p>SDG 2: Zero Hunger<br>SDG 7: Affordable & Clean Energy</p>
+          </div>
+          <div class="impact-category reveal delay-2">
+            <h3 class="impact-title">AI for All</h3>
+            <p>SDG 1: No Poverty<br>SDG 3: Good Health<br>SDG 15: Life on Land</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. About InstaViv AI -->
+    <section class="about section-padding light-section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal dark-text">About InstaViv AI</h2>
+        <div class="about-content reveal">
+          <p class="about-lead">A sister company of Dataviv Technologies, InstaViv AI is built on a proven enterprise & deployment heritage.</p>
+          <p>With massive flagship projects deployed at ISRO, Mayo College, Baramati, and Akola, we bring real-world AI capabilities to educational institutions.</p>
+          <!-- ADD: founder bio -->
+          <div class="placeholder-content">
+            <p><em>[Founder / Leadership Bio Placeholder]</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Why InstaViv -->
+    <section class="why-us section-padding" id="why-us">
+      <div class="container">
+        <h2 class="section-title reveal">Why InstaViv</h2>
+        <div class="diff-band reveal">
+          <span>Real Deployable Infra</span>
+          <span class="dot">•</span>
+          <span>Industry-grade Hardware</span>
+          <span class="dot">•</span>
+          <span>Custom Curriculum & Handholding</span>
+          <span class="dot">•</span>
+          <span>Cloud-Connected Labs</span>
+          <span class="dot">•</span>
+          <span>Renewable AMC Support</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CTA Band -->
+    <section class="cta-band" id="contact">
+      <div class="container text-center reveal">
+        <h2 class="hero-title" style="font-size: 3rem; margin-bottom: 2rem;">Ready to build the next generation of AI creators?</h2>
+        <a href="#demo" class="btn btn-primary btn-large">Book a Campus Demo</a>
+      </div>
+    </section>
+
+    <!-- 12. Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="/Instaviv_logo.jpeg" alt="InstaViv AI Logo" class="footer-logo">
+          <p>A sister company of Dataviv Technologies</p>
+          <!-- ADD: social icons -->
+          <div class="socials">
+            <span>[Social Icons Placeholder]</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="#hero">Home</a>
+          <a href="#courses">Courses</a>
+          <a href="#labs">Labs</a>
+          <a href="#work">Our Work</a>
+          <a href="#impact">Impact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <!-- ADD: contact details -->
+          <p>[Email Placeholder]</p>
+          <p>[Phone Placeholder]</p>
+          <p>[Address Placeholder]</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 InstaViv AI. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
