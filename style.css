@@ -304,12 +304,30 @@ a {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 1px;
-  color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  white-space: nowrap; 
-  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+  gap: 12px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.logo-text {
+  background: linear-gradient(90deg, 
+    #7038F8 0%, #7038F8 25%, 
+    #1A6AB5 25%, #1A6AB5 50%, 
+    #009B8E 50%, #009B8E 75%, 
+    #1A6AB5 75%, #1A6AB5 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logo-shine 12s linear infinite; /* Slowed down animation */
+}
+
+@keyframes logo-shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .logo-img {
