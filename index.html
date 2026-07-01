@@ -50,48 +50,8 @@
       
       <!-- Left: Half cut 3D image -->
       <div class="hero-half-img-positioner">
-        <div class="hero-half-img reveal delay-1">
-          <img src="/hero_centerpiece_transparent.png" alt="AI Robot Centerpiece" id="robot-avatar">
-          
-          <!-- Futuristic connected line and box -->
-          <div class="init-ai-container" id="init-ai-wrapper">
-            <svg class="init-ai-svg" width="180" height="42">
-              <defs>
-                <filter id="line-glow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="2" result="blur" />
-                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                </filter>
-              </defs>
-              <!-- 45-degree angled sci-fi line -->
-              <polyline points="0,1 60,1 100,41 180,41" fill="none" stroke="var(--text-primary)" stroke-width="1.5" filter="url(#line-glow)"/>
-              <circle cx="3" cy="1" r="3.5" fill="var(--text-primary)" filter="url(#line-glow)"/>
-            </svg>
-            
-            <div class="init-ai-pos sci-fi-box" id="init-ai-btn" style="transition: opacity 0.3s;">
-              <div class="sci-fi-box-inner" style="white-space: nowrap;">
-                <span class="pulse-dot"></span> INITIALIZE AI
-              </div>
-            </div>
-            
-            <!-- Grouped Speech & Chat UI to prevent overlap -->
-            <div class="init-ai-pos" style="display: flex; flex-direction: column; gap: 15px;">
-              <div class="sci-fi-box" id="avatar-speech-wrapper" style="opacity: 0; pointer-events: none; transition: opacity 0.3s;">
-                <div class="sci-fi-box-inner" style="width: 320px; line-height: 1.6;">
-                  <div id="avatar-speech-hud" style="max-height: 250px; overflow-y: auto; pointer-events: auto; padding-right: 5px; display: flex; flex-direction: column; gap: 8px;"></div>
-                </div>
-              </div>
-
-              <!-- New Chat Input UI -->
-              <div class="sci-fi-box" id="avatar-chat-wrapper" style="opacity: 0; pointer-events: none; transition: opacity 0.3s;">
-                <div class="sci-fi-box-inner" style="width: 320px; padding: 0.5rem; display: flex; gap: 8px;">
-                  <input type="text" id="chat-input" placeholder="Message AI..." style="background: transparent; border: none; color: var(--text-primary); outline: none; width: 100%; font-family: var(--font-tech); font-size: 0.8rem; letter-spacing: 1px; padding-left: 10px;" autocomplete="off" />
-                  <button id="chat-mute" style="background: transparent; border: 1px solid var(--electric-cyan); padding: 4px 6px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--electric-cyan); border-radius: 2px;">MUTE</button>
-                  <button id="chat-send" style="background: var(--electric-cyan); border: none; padding: 4px 10px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: #000; border-radius: 2px;">SEND</button>
-                  <button id="chat-stop" style="background: var(--warm-coral); border: none; padding: 4px 10px; cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: #000; border-radius: 2px; display: none;">STOP</button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-half-img reveal delay-1" id="avatar-react-root">
+          <!-- React Avatar App will mount here -->
         </div>
       </div>
 
@@ -101,7 +61,7 @@
           <h1 class="hero-main-title">
             <span class="highlight-cyan text-glow">AI as a Skill.</span><br>
             <span class="text-outline" style="font-size: 0.85em; opacity: 0.8;">Built Into the</span><br>
-            <span id="dynamic-text">Next Generation.</span>
+            <span id="dynamic-text">Future.</span>
           </h1>
           <p class="hero-description">
             InstaViv AI designs and deploys <span class="text-highlight">hands-on AI learning labs</span>, courses, and <span class="text-highlight">immersive experiential infrastructure</span> for schools, colleges, and institutions.
@@ -388,6 +348,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.jsx"></script>
   </body>
 </html>

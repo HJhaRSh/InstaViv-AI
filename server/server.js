@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import { generateChatResponse } from './gemini.js';
+import { generateChatResponse } from './openrouter.js';
+import { generateSpeech } from './tts.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,6 +23,26 @@ app.post('/api/chat', async (req, res) => {
   } catch (error) {
     console.error('API /api/chat error:', error);
     res.status(500).json({ error: 'Failed to generate response' });
+  }
+});
+
+app.post('/api/tts', async (req, res) => {
+  try {
+    const { text } = req.body;
+    
+    if (!text || typeof text !== 'string') {
+      return res.status(400).json({ error: 'Invalid or missing text payload' });
+    }
+
+    const { audioBase64, mimeType } = await generateSpeech(text);
+    
+    const audioBuffer = Buffer.from(audioBase64, 'base64');
+    
+    res.setHeader('Content-Type', mimeType);
+    res.send(audioBuffer);
+  } catch (error) {
+    console.error('API /api/tts error:', error);
+    res.status(500).json({ error: 'Failed to generate speech' });
   }
 });
 

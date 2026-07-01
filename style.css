@@ -285,27 +285,25 @@ a {
 }
 
 .navbar.scrolled {
-  background: rgba(11, 19, 43, 0.95);
-  backdrop-filter: blur(10px);
+  background: #ffffff; /* Solid white background as requested */
   padding: 1rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
   display: flex;
-  justify-content: flex-end; /* Push everything to the right away from the avatar */
   align-items: center;
-  gap: 3rem; /* Add more gap between logo and links */
+  gap: 3rem;
   max-width: 100%; 
   padding: 0 4rem; 
 }
 
 .logo {
-  font-family: var(--font-tech);
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -315,8 +313,9 @@ a {
 }
 
 .logo-img {
-  width: 45px;
+  width: 60px;
   height: 45px;
+  object-fit: cover;
   border-radius: 6px;
   mix-blend-mode: multiply; /* Makes white background transparent */
 }
@@ -324,7 +323,7 @@ a {
 .nav-links {
   display: flex;
   gap: 1.8rem;
-  /* Removed margin-left: auto so it doesn't push the logo left */
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -412,13 +411,15 @@ a {
 
 .hero-half-img-positioner {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  transform: translate(-45%, -50%);
-  height: 110vh;
+  height: 100vh; 
+  width: 45vw; /* Fit entire left side */
   z-index: 2;
-  pointer-events: none;
-  perspective: 1000px; /* Enables 3D rotations for the avatar */
+  pointer-events: auto; /* Allow interacting with chat */
+  display: flex;
+  align-items: flex-end; /* Starts from the bottom */
+  justify-content: center;
 }
 
 .hero-half-img {
@@ -542,22 +543,22 @@ a {
   transition: all 0.3s;
 }
 
-.sci-fi-box:hover {
+.sci-fi-box:not(.no-hover):hover {
   transform: translateY(-3px);
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
 }
 
-.sci-fi-box:hover .sci-fi-box-inner {
+.sci-fi-box:not(.no-hover):hover .sci-fi-box-inner {
   background: var(--text-primary);
   color: var(--deep-navy);
 }
 
-.sci-fi-box:hover .sci-fi-box-inner::before {
+.sci-fi-box:not(.no-hover):hover .sci-fi-box-inner::before {
   background: var(--electric-cyan);
   color: var(--text-primary);
 }
 
-.sci-fi-box:hover .sci-fi-box-inner::after {
+.sci-fi-box:not(.no-hover):hover .sci-fi-box-inner::after {
   background: repeating-linear-gradient(
     -45deg,
     var(--electric-cyan),
@@ -620,9 +621,10 @@ a {
 .hero-right-content {
   width: 100%;
   max-width: 600px;
-  padding-right: 2rem;
+  padding-right: 0; /* Removed padding to allow it to push closer to the edge */
   position: relative;
   z-index: 5; /* Text renders over the avatar background */
+  transform: translateX(100px); /* Shifted much further to the right */
 }
 
 /* Flex layout for the main sci-fi buttons */
@@ -635,6 +637,8 @@ a {
 
 /* Typewriter Cursor Integrated */
 #dynamic-text {
+  display: inline-block;
+  min-height: 1.1em;
   /* Removed blinking cursor as requested */
 }
 
@@ -648,6 +652,7 @@ a {
   font-weight: 900; /* Extra bold hero text */
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  min-height: 3.5em; /* Lock height to prevent content below from jumping during typing animation */
 }
 
 /* --- CREATIVE TYPOGRAPHY EFFECTS --- */
@@ -658,7 +663,7 @@ a {
 }
 
 .highlight-cyan {
-  color: #00c875; /* Solid green instead of shaded gradient */
+  color: #1a6ab5; /* Shade of blue matching the InstaViv logo */
   display: inline-block;
 }
 
