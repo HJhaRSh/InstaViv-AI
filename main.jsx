@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import AvatarApp from './src/avatar/AvatarApp.jsx';
+import CoursesApp from './src/courses/CoursesApp.jsx';
 
 // Sticky Navbar functionality
 const navbar = document.getElementById('navbar');
@@ -195,6 +196,14 @@ if (rootElement) {
   const root = createRoot(rootElement);
   root.render(<AvatarApp />);
 }
+
+// Educational Courses React App
+const coursesRootElement = document.getElementById('courses-react-root');
+if (coursesRootElement) {
+  const coursesRoot = createRoot(coursesRootElement);
+  coursesRoot.render(<CoursesApp />);
+}
+
 // --- Dynamic Text & Counter Animations ---
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Typewriter Rotator

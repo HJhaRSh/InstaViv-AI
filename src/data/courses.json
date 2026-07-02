@@ -1,0 +1,1298 @@
+[
+  {
+    "id": "applied-ai-lab--computer-vision-core",
+    "category": "Applied AI Lab — Computer Vision Core",
+    "description": "Explore courses in Applied AI Lab — Computer Vision Core",
+    "icon": "Eye",
+    "courses": [
+      {
+        "id": "metacognition-rewiring-the-brain-for-ai",
+        "title": "Metacognition — Rewiring the Brain for AI",
+        "description": "Understanding how humans perceive the world; building mental guardrails and reinforcing metacognition (B R A A I N).",
+        "level": "Basic – Mandatory – Intro",
+        "duration": "36 Hrs",
+        "prerequisites": "Mobile phone + AICTE-approved app (built in course); no coding",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "data-management-and-preparation",
+        "title": "Data Management and Preparation",
+        "description": "Efficient data preparation to achieve planned AI outcomes; the full data lifecycle.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Computer Vision or any intro course",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "deep-dive-into-algorithms-training-for",
+        "title": "Deep Dive into Algorithms & Training for",
+        "description": "Computer Vision Nature, diversity and working of algorithms used to train intelligences through a CV lens.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Computer Vision or any intro course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "quality-assurance-and-assessment",
+        "title": "Quality Assurance and Assessment",
+        "description": "Assuring quality, accuracy and model resilience in AI solutions; guaranteeing performance.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Computer Vision or any intro course",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "computer-vision-use-cases-end-to-end",
+        "title": "Computer Vision Use Cases & End-to-End",
+        "description": "Lifecycle Management Hands-on CV development — 5 solutions in 5 weeks, 6th week long-term project.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Computer Vision",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "startup-project-innovation",
+        "title": "Startup, Project, Innovation",
+        "description": "Custom industry problems, your own startup/innovation, or research developed as a startup.",
+        "level": "Intermediate – Mandatory",
+        "duration": "36 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "business-ai-courses",
+    "category": "Business AI Courses",
+    "description": "Explore courses in Business AI Courses",
+    "icon": "Briefcase",
+    "courses": [
+      {
+        "id": "analyzing-business-data-with-ai",
+        "title": "Analyzing Business Data with AI",
+        "description": "AI-driven analytics for decision-making — predictive modelling, ML, data visualization.",
+        "level": "Basic",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic business analytics; no coding",
+        "tags": [
+          "Business",
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-marketing-customer-relationship",
+        "title": "AI in Marketing & Customer Relationship",
+        "description": "Management (CRM) Personalize marketing, predict customer behavior, automate service for growth.",
+        "level": "Basic",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic marketing/CRM; no coding",
+        "tags": [
+          "Business",
+          "Beginner"
+        ]
+      },
+      {
+        "id": "computer-vision-for-business-applications",
+        "title": "Computer Vision for Business Applications",
+        "description": "",
+        "level": "Basic",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic business analytics; no coding",
+        "tags": [
+          "Business",
+          "Beginner"
+        ]
+      },
+      {
+        "id": "interaction-ai-for-business-innovation",
+        "title": "Interaction AI for Business Innovation",
+        "description": "Engage customers via conversational agents, chatbots and virtual assistants.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic AI; no coding",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-project-management-for-computer-vision",
+        "title": "AI Project Management for Computer Vision",
+        "description": "Applications Manage the AI project lifecycle — objectives, data, algorithms, timelines, stakeholders.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic AI; no coding",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "quality-assurance-in-ai-for-computer-vision",
+        "title": "Quality Assurance in AI for Computer Vision",
+        "description": "QA best practices — testing models, data quality, edge cases, overfitting, bias.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic AI and CV; no coding",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ethical-ai-design-and-governance",
+        "title": "Ethical AI Design and Governance",
+        "description": "Ethics and governance — fairness, transparency, compliance, accountability.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic AI",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "valuing-ai-products-and-systems",
+        "title": "Valuing AI Products and Systems",
+        "description": "Assess value of AI products — ROI, impact, costs, business cases, prioritization.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic AI and business",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "data-management-and-preparation",
+        "title": "Data Management and Preparation",
+        "description": "Full data lifecycle — collection, preparation, integration, evaluation.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic CV AI or Interaction AI course",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "startup-project-innovation",
+        "title": "Startup, Project, Innovation",
+        "description": "Custom industry challenges, AI projects, or transitioning research into startups.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Prior 3 courses (one CV or Interaction AI)",
+        "tags": [
+          "Business",
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-for-semiconductor-design--manufacturing",
+    "category": "AI for Semiconductor Design & Manufacturing",
+    "description": "Explore courses in AI for Semiconductor Design & Manufacturing",
+    "icon": "Cpu",
+    "courses": [
+      {
+        "id": "advanced-ai-in-semiconductor-fabrication",
+        "title": "Advanced AI in Semiconductor Fabrication",
+        "description": "Predictive maintenance, process optimization, defect detection, yield improvement.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic semiconductor principles + some ML",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-in-semiconductor-supply-chain",
+        "title": "AI in Semiconductor Supply Chain &",
+        "description": "Manufacturing Optimization Predict supply chain issues, improve scheduling, reduce costs.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic supply chain and manufacturing",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "introduction-to-ai-in-chip-design",
+        "title": "Introduction to AI in Chip Design",
+        "description": "AI in layout planning, circuit optimization, and predicting chip behavior.",
+        "level": "Mandatory – Intro",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic electronics & semiconductors; no coding",
+        "tags": []
+      },
+      {
+        "id": "advanced-ai-in-semiconductor-fabrication",
+        "title": "Advanced AI in Semiconductor Fabrication",
+        "description": "Predictive maintenance, process optimization, defect detection, yield improvement.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic semiconductor principles + some ML",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "cutting-edge-ai-techniques-for-next-gen",
+        "title": "Cutting-Edge AI Techniques for Next-Gen",
+        "description": "Semiconductor Devices Reinforcement learning and deep neural networks for performance and energy efficiency.",
+        "level": "Advanced",
+        "duration": "36 Hrs",
+        "prerequisites": "Strong semiconductor + deep learning base",
+        "tags": [
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-for-semiconductor-device-characterization",
+        "title": "AI for Semiconductor Device Characterization &",
+        "description": "Performance Tuning Characterize devices; optimize speed, power, reliability for mobile, automotive, IoT.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Device physics + basic ML",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-in-semiconductor-supply-chain",
+        "title": "AI in Semiconductor Supply Chain &",
+        "description": "Manufacturing Optimization",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic supply chain and manufacturing",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "cutting-edge-ai-techniques-for-next-gen",
+        "title": "Cutting-Edge AI Techniques for Next-Gen",
+        "description": "Semiconductor Devices AI for reliability testing, failure analysis, and lifetime prediction.",
+        "level": "Advanced",
+        "duration": "36 Hrs",
+        "prerequisites": "Advanced devices + failure mechanisms",
+        "tags": [
+          "Advanced"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-courses-for-various-industries",
+    "category": "AI Courses for Various Industries",
+    "description": "Explore courses in AI Courses for Various Industries",
+    "icon": "Factory",
+    "courses": [
+      {
+        "id": "artificial-intelligence-for-managers",
+        "title": "Artificial Intelligence for Managers",
+        "description": "Managing AI from a manager/operator's perspective; when, where and how to apply AI.",
+        "level": "Intermediate",
+        "duration": "72 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "artificial-intelligence-for-creative-business",
+        "title": "Artificial Intelligence for Creative Business",
+        "description": "Professionals AI innovations to improve quality and time-to-outcome for creative professionals.",
+        "level": "Intermediate",
+        "duration": "72 Hrs",
+        "prerequisites": "None; AI built in the field",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-for-fashion-and-apparel-design",
+        "title": "AI for Fashion and Apparel Design",
+        "description": "Trend forecasting, automated design, inventory management, sustainable fashion.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic fashion design, textiles, data analysis",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-for-construction-and-infrastructure",
+        "title": "AI for Construction and Infrastructure",
+        "description": "Design, project management, predictive maintenance, sustainability.",
+        "level": "Intermediate",
+        "duration": "72 Hrs",
+        "prerequisites": "Basic construction, PM, data analysis",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-for-human-resources-workforce-analytics",
+        "title": "AI for Human Resources & Workforce Analytics",
+        "description": "Talent acquisition, workforce management, engagement, performance analysis.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic HR principles",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-healthcare-professionals",
+        "title": "AI Solutions for Healthcare Professionals",
+        "description": "AI for diagnostics, treatment plans and patient care.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Medical background + basic data/analytics",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-environmental-sustainability",
+        "title": "AI Solutions for Environmental & Sustainability",
+        "description": "Experts Renewable energy, pollution monitoring, resource management.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Environmental science / sustainability background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-the-automobile-industry",
+        "title": "AI Solutions for the Automobile Industry",
+        "description": "Autonomous vehicles, predictive maintenance, manufacturing optimization.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Engineering / automotive background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-the-retail-industry",
+        "title": "AI Solutions for the Retail Industry",
+        "description": "Customer experience optimization, inventory management, sales forecasting.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Retail management / e-commerce background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-space-exploration",
+        "title": "AI Solutions for Space Exploration",
+        "description": "Satellite data analysis and autonomous spacecraft navigation.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Aerospace / space science background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-in-nursing-and-healthcare-support",
+        "title": "AI in Nursing and Healthcare Support",
+        "description": "AI for nursing practices, patient care and support systems.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Nursing / healthcare support background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-aerospace-engineering",
+        "title": "AI Solutions for Aerospace Engineering",
+        "description": "Autonomous flight systems, spacecraft design, performance optimization.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Aerospace / aviation background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-architecture-urban-planning",
+        "title": "AI Solutions for Architecture & Urban Planning",
+        "description": "Architectural design, building management, urban planning, smart cities.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Architecture / urban planning / construction",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-agriculture-farm-management",
+        "title": "AI Solutions for Agriculture & Farm Management",
+        "description": "Crop management, precision farming, pest control, sustainable practices.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Agriculture / ag engineering / farm mgmt.",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-solutions-for-mental-health-psychological",
+        "title": "AI Solutions for Mental Health & Psychological",
+        "description": "Support Virtual therapy assistants and predictive analytics for mental health.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Psychology / counselling / mental health",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      },
+      {
+        "id": "ai-in-dental-healthcare",
+        "title": "AI in Dental Healthcare",
+        "description": "AI for dental diagnostics, treatment planning and patient care.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Dentistry / dental healthcare background",
+        "tags": [
+          "Intermediate",
+          "Industry"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "learn-ai--comprehensive-learning-engineering",
+    "category": "Learn AI — Comprehensive Learning (Engineering)",
+    "description": "Explore courses in Learn AI — Comprehensive Learning (Engineering)",
+    "icon": "Wrench",
+    "courses": [
+      {
+        "id": "ai-driven-innovation-in-mechanical-engineering",
+        "title": "AI-Driven Innovation in Mechanical Engineering",
+        "description": "Design, manufacturing, predictive maintenance and optimization of mechanical systems.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Mechanical engineering background",
+        "tags": [
+          "Engineering",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "the-future-of-electrical-engineering-with-ai",
+        "title": "The Future of Electrical Engineering with AI",
+        "description": "From circuit design to energy distribution.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Electrical engineering background",
+        "tags": [
+          "Engineering",
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-for-chemical-engineering-the-next-frontier",
+        "title": "AI for Chemical Engineering: The Next Frontier",
+        "description": "Process optimization, sustainability and safety for petrochemicals & pharma.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Chemical engineering background",
+        "tags": [
+          "Engineering",
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-for-technology-skill-sets-and-roles",
+    "category": "AI for Technology Skill Sets and Roles",
+    "description": "Explore courses in AI for Technology Skill Sets and Roles",
+    "icon": "Code",
+    "courses": [
+      {
+        "id": "ai-backend-with-fast-api-enhancing-developer",
+        "title": "AI Backend with Fast API: Enhancing Developer",
+        "description": "Efficiency Automate routine tasks, API efficiency, scalability and secure deployments.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Backend development with Python",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-product-manager-leading-ai-product",
+        "title": "AI Product Manager: Leading AI Product",
+        "description": "Development Integrate AI into product development — decisions, prioritization, optimization.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "PM experience + AI fundamentals",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-in-iot-building-intelligent-systems",
+        "title": "AI in IoT: Building Intelligent Systems",
+        "description": "Smarter, more autonomous and responsive IoT devices.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic IoT and AI fundamentals",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-ui-designer-empowering-creative",
+        "title": "AI UI Designer: Empowering Creative",
+        "description": "Professionals Automate design, improve UX, personalized outputs.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic design tools (Adobe, Sketch, Figma)",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-tester-revolutionizing-software-testing-with",
+        "title": "AI Tester: Revolutionizing Software Testing with",
+        "description": "AI Automate testing, improve accuracy, identify bugs.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic software testing methodologies",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-front-end-react-building-smart-user",
+        "title": "AI Front-End React: Building Smart User",
+        "description": "Interfaces Enhance UIs, performance and personalized experiences with AI.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "React.js and JavaScript",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-blockchain-revolutionizing-decentralized",
+        "title": "AI Blockchain: Revolutionizing Decentralized",
+        "description": "Systems Optimize blockchain efficiency, security and smarter Dapps.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Blockchain and AI fundamentals",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      },
+      {
+        "id": "ai-robotics-automating-the-future-of-work",
+        "title": "AI Robotics: Automating the Future of Work",
+        "description": "",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic robotics and programming",
+        "tags": [
+          "Intermediate",
+          "Technology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-for-various-roles",
+    "category": "AI for Various Roles",
+    "description": "Explore courses in AI for Various Roles",
+    "icon": "Users",
+    "courses": [
+      {
+        "id": "ai-fire-safety-revolutionizing-emergency",
+        "title": "AI Fire Safety: Revolutionizing Emergency",
+        "description": "Response AI for fire detection, prevention and response.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic fire safety principles",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-traffic-management-optimizing-urban",
+        "title": "AI Traffic Management: Optimizing Urban",
+        "description": "Mobility AI to reduce congestion and improve urban mobility.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic traffic & transportation planning",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-cyber-security-defending-digital-assets-with",
+        "title": "AI Cyber Security: Defending Digital Assets with",
+        "description": "AI Automate threat detection, identify vulnerabilities, incident response.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic cyber security principles",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-teachers-transforming-education-with",
+        "title": "AI Teachers: Transforming Education with",
+        "description": "Technology Personalized learning, classroom management, teaching and grading.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic teaching practices",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-business-owners-optimizing-business",
+        "title": "AI Business Owners: Optimizing Business",
+        "description": "Operations Automation, customer insights and predictive analytics.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic business operations & management",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-government-officials-improving-governance",
+        "title": "AI Government Officials: Improving Governance",
+        "description": "with AI AI for public policy, city management and citizen engagement.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic government functions & public policy",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-forest-preservation-ai-for-environmental",
+        "title": "AI Forest Preservation: AI for Environmental",
+        "description": "Protection Monitor ecosystems, prevent deforestation, protect biodiversity.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Basic environmental science & conservation",
+        "tags": [
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "interaction-ai--fundamentals-for-innovation-learning--skill",
+    "category": "Interaction AI — Fundamentals for Innovation, Learning & Skill",
+    "description": "Explore courses in Interaction AI — Fundamentals for Innovation, Learning & Skill",
+    "icon": "MessageSquare",
+    "courses": [
+      {
+        "id": "interaction-ai-fundamentals",
+        "title": "Interaction AI Fundamentals",
+        "description": "How AI interacts with humans and the environment; NLP, speech, gesture.",
+        "level": "Basic – Mandatory – Intro",
+        "duration": "36 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "data-management-and-preparation-for",
+        "title": "Data Management and Preparation for",
+        "description": "Interaction AI Data's impact on interaction AI; effective collection and preparation.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Interaction AI or any intro course",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "deep-dive-into-algorithms-training-for",
+        "title": "Deep Dive into Algorithms & Training for",
+        "description": "Interaction AI Algorithms used to train intelligence through an interaction AI lens.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Interaction AI or any intro course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "quality-assurance-and-assessment-for",
+        "title": "Quality Assurance and Assessment for",
+        "description": "Interaction AI Assuring quality, accuracy and model resilience for interaction AI.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Interaction AI or any intro course",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "interaction-ai-use-cases-end-to-end-lifecycle",
+        "title": "Interaction AI Use Cases & End-to-End Lifecycle",
+        "description": "Management Hands-on — 5 solutions in 5 weeks, 6th week long- term project.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Interaction AI Fundamentals",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "perfecting-human-interaction-recognition",
+        "title": "Perfecting Human Interaction Recognition",
+        "description": "Recognition of human interactions, gestures and expressions.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to Interaction AI or any intro course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-agents-and-their-roles",
+        "title": "AI Agents and Their Roles",
+        "description": "AI agents, classifications and industry impact, focused on Interaction AI.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to AI or any foundational AI course",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "large-language-models-llms-ai-in",
+        "title": "Large Language Models (LLMs) & AI in",
+        "description": "Language Processing Power, applications and development of LLMs for text and conversation.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to AI or any foundational AI course",
+        "tags": [
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "metaverse-ai-core-curriculum",
+    "category": "Metaverse AI Core Curriculum",
+    "description": "Explore courses in Metaverse AI Core Curriculum",
+    "icon": "Globe",
+    "courses": [
+      {
+        "id": "an-introduction-to-metaverse",
+        "title": "An Introduction to Metaverse",
+        "description": "Overview of the Metaverse and related skill areas.",
+        "level": "Basic – Choice – Spec.",
+        "duration": "45 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "generative-ai-for-metaverse-asset-building",
+        "title": "Generative AI for Metaverse Asset Building",
+        "description": "Building and identifying asset applicability for metaverse experiences.",
+        "level": "Intermediate",
+        "duration": "45 Hrs",
+        "prerequisites": "One AI Intro + Intro to Metaverse",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "multi-agent-interaction-design-metaverse",
+        "title": "Multi-Agent Interaction Design — Metaverse",
+        "description": "Multiple users and agents in one environment with custom experiences.",
+        "level": "Intermediate",
+        "duration": "45 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-for-geography-and-linguistics",
+    "category": "AI for Geography and Linguistics",
+    "description": "Explore courses in AI for Geography and Linguistics",
+    "icon": "Map",
+    "courses": [
+      {
+        "id": "ai-in-geography",
+        "title": "AI in Geography",
+        "description": "Geographical analysis, environmental monitoring, spatial data; GIS, geopolitics.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to AI or any foundational AI course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-for-linguistics",
+        "title": "AI for Linguistics",
+        "description": "Language processing, translation, phonetics; NLP, speech, preservation.",
+        "level": "Intermediate – Choice",
+        "duration": "36 Hrs",
+        "prerequisites": "Intro to AI or any foundational AI course",
+        "tags": [
+          "Intermediate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-curriculum--beginner--school-levels",
+    "category": "AI Curriculum — Beginner / School Levels",
+    "description": "Explore courses in AI Curriculum — Beginner / School Levels",
+    "icon": "GraduationCap",
+    "courses": [
+      {
+        "id": "introduction-to-ai-and-thinking-systems-grade",
+        "title": "Introduction to AI and Thinking Systems (Grade",
+        "description": "4–5) AI concepts through interactive activities.",
+        "level": "Beginner",
+        "duration": "36 Hrs",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner",
+          "School"
+        ]
+      },
+      {
+        "id": "ai-and-its-decision-making-process-grade-67",
+        "title": "AI and Its Decision-Making Process (Grade 6–7)",
+        "description": "Deepening AI decision-making through interactive exploration.",
+        "level": "Beginner",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 4 AI course",
+        "tags": [
+          "Beginner",
+          "School"
+        ]
+      },
+      {
+        "id": "ai-in-real-world-interactions-grade-89",
+        "title": "AI in Real-World Interactions (Grade 8–9)",
+        "description": "How AI interacts with humans and surroundings.",
+        "level": "Intermediate",
+        "duration": "36 Hrs (1hr x 2)",
+        "prerequisites": "Grade 5 AI course",
+        "tags": [
+          "Intermediate",
+          "School"
+        ]
+      },
+      {
+        "id": "ai-for-real-world-problem-solving-grade-11",
+        "title": "AI for Real-World Problem Solving (Grade 11)",
+        "description": "AI applications in practical challenges across industries.",
+        "level": "Intermediate",
+        "duration": "36 Hrs (1hr x 2)",
+        "prerequisites": "Grade 6 AI course",
+        "tags": [
+          "Intermediate",
+          "School"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-curriculum-and-classes-for-seniors",
+    "category": "AI Curriculum and Classes for Seniors",
+    "description": "Explore courses in AI Curriculum and Classes for Seniors",
+    "icon": "UserCheck",
+    "courses": [
+      {
+        "id": "ai-for-automation-and-robotics",
+        "title": "AI for Automation and Robotics",
+        "description": "AI's role in automating processes and robotics development.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 11 AI course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-for-human-interaction-and-creativity",
+        "title": "AI for Human Interaction and Creativity",
+        "description": "Communication, creativity and social development.",
+        "level": "Intermediate",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 11 AI course",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "ai-for-science-and-research",
+        "title": "AI for Science and Research",
+        "description": "Scientific discovery, healthcare and space exploration.",
+        "level": "Advanced",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 11 AI course",
+        "tags": [
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-for-business-and-industry",
+        "title": "AI for Business and Industry",
+        "description": "Business, finance and large-scale industries.",
+        "level": "Advanced",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 11 AI course",
+        "tags": [
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-for-future-innovations",
+        "title": "AI for Future Innovations",
+        "description": "Cutting-edge AI in futuristic and emerging technologies.",
+        "level": "Advanced",
+        "duration": "36 Hrs",
+        "prerequisites": "Grade 11 AI course",
+        "tags": [
+          "Advanced"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-courses-with-hands-on-college-years",
+    "category": "AI Courses with Hands-On (College Years)",
+    "description": "Explore courses in AI Courses with Hands-On (College Years)",
+    "icon": "BookOpen",
+    "courses": [
+      {
+        "id": "foundations-of-ai-and-applied-development",
+        "title": "Foundations of AI and Applied Development",
+        "description": "Structured AI fundamentals and essential development skills.",
+        "level": "Inter. to Advanced",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Grade 12 AI or equivalent",
+        "tags": [
+          "College",
+          "Intermediate",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "advanced-ai-and-industry-applications",
+        "title": "Advanced AI and Industry Applications",
+        "description": "Advanced AI techniques and real-world industry/research applications.",
+        "level": "Advanced",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Year 1 AI coursework or equivalent",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "advanced-ai-systems-and-specialization",
+        "title": "Advanced AI Systems and Specialization",
+        "description": "Specialized AI fields, research methodologies, large- scale applications.",
+        "level": "Advanced",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Year 2 AI coursework or equivalent",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-mastery-research-industrial-ai",
+        "title": "AI Mastery, Research & Industrial AI",
+        "description": "Applications (Yr 4) AI mastery, industry-ready solutions and entrepreneurship.",
+        "level": "Expert",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Year 3 AI coursework or equivalent",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "mastering-large-language-models-llms-ai",
+        "title": "Mastering Large Language Models (LLMs) & AI-",
+        "description": "Powered NLP Advanced LLMs, real-world applications and research.",
+        "level": "Expert",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Year 3 AI + NLP/deep learning",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-agents-autonomous-decision-making",
+        "title": "AI Agents, Autonomous Decision-Making &",
+        "description": "Multi-Agent Systems AI-powered agents for automation, autonomous reasoning, collaboration.",
+        "level": "Expert",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Year 3 AI + RL/automation",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "ai-frameworks-and-libraries-for-scalable-ai",
+        "title": "AI Frameworks and Libraries for Scalable AI",
+        "description": "Development Top AI libraries, frameworks and best practices for scalable solutions.",
+        "level": "Advanced",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "Intermediate Python, DL basics",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "advanced-ai-development-techniques",
+        "title": "Advanced AI Development Techniques &",
+        "description": "Emerging Trends Research-driven, cutting-edge AI methodologies.",
+        "level": "Expert",
+        "duration": "72 Hrs (12 wks)",
+        "prerequisites": "AI Foundations + model dev experience",
+        "tags": [
+          "College",
+          "Advanced"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced--short-ai-courses",
+    "category": "Advanced / Short AI Courses",
+    "description": "Explore courses in Advanced / Short AI Courses",
+    "icon": "Award",
+    "courses": [
+      {
+        "id": "ai-for-digital-marketing-consumer",
+        "title": "AI for Digital Marketing & Consumer",
+        "description": "Engagement AI in marketing, branding and audience engagement.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-for-architecture-urban-planning",
+        "title": "AI for Architecture & Urban Planning",
+        "description": "Architectural design, sustainable urban planning, construction efficiency.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-accounting-financial",
+        "title": "AI in Accounting & Financial",
+        "description": "Management",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-for-finance-investment-strategy",
+        "title": "AI for Finance & Investment Strategy",
+        "description": "Investment strategies, risk management, financial forecasting.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-hospitality-tourism",
+        "title": "AI in Hospitality & Tourism",
+        "description": "Management Customer experience, travel optimization, business efficiency.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-journalism-media-content",
+        "title": "AI in Journalism & Media Content",
+        "description": "Creation Journalism, media ethics, content personalization.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-psychology-behavioral",
+        "title": "AI in Psychology & Behavioral",
+        "description": "Analysis Psychological research, mental health, behavior analysis.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-law-legal-technology-for",
+        "title": "AI in Law & Legal Technology for",
+        "description": "Beginners Automating research, contract analysis and compliance.",
+        "level": "Beginner",
+        "duration": "36 Hrs (6 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-in-music-production-sound",
+        "title": "AI in Music Production & Sound",
+        "description": "Design Music generation, sound mixing, creative collaboration.",
+        "level": "Beginner",
+        "duration": "18 Hrs (3 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-for-climate-change-and-esg",
+        "title": "AI for Climate Change and ESG",
+        "description": "Sustainability Bridging AI and sustainability for a greener future.",
+        "level": "Intermediate",
+        "duration": "48 Hrs (8 wks)",
+        "prerequisites": "Basic sustainability / ESG interest",
+        "tags": [
+          "Intermediate"
+        ]
+      },
+      {
+        "id": "introduction-to-ai-a-basic-course",
+        "title": "Introduction to AI — A Basic Course",
+        "description": "A beginner-friendly journey into AI applications.",
+        "level": "Beginner to Inter.",
+        "duration": "60 Hrs (10 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Intermediate",
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-sales-mastery",
+        "title": "AI Sales Mastery",
+        "description": "Selling AI solutions — technologies, customer needs, sales strategies.",
+        "level": "Beginner",
+        "duration": "12 Hrs (2 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Beginner"
+        ]
+      },
+      {
+        "id": "ai-for-consulting-venture-capital",
+        "title": "AI for Consulting, Venture Capital &",
+        "description": "Private Equity AI for smarter investments, business strategies and deal flow.",
+        "level": "Inter. to Advanced",
+        "duration": "48 Hrs (8 wks)",
+        "prerequisites": "Basic business/finance/investment",
+        "tags": [
+          "Intermediate",
+          "Advanced"
+        ]
+      },
+      {
+        "id": "introduction-to-ai-a-basic-course",
+        "title": "Introduction to AI — A Basic Course",
+        "description": "A beginner-friendly journey into AI applications.",
+        "level": "Beginner to Inter.",
+        "duration": "60 Hrs (10 wks)",
+        "prerequisites": "None",
+        "tags": [
+          "Intermediate",
+          "Beginner"
+        ]
+      },
+      {
+        "id": "computer-vision-fundamentals",
+        "title": "Computer Vision Fundamentals",
+        "description": "How the computer sees the world — field, process and mechanism.",
+        "level": "Basic – Mandatory – Intro",
+        "duration": "36 Hrs",
+        "prerequisites": "None; no coding",
+        "tags": [
+          "Beginner"
+        ]
+      }
+    ]
+  }
+]

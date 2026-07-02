@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/Instaviv_logo.jpeg" />
+    <link rel="icon" type="image/jpeg" href="/Instaviv_logo_transparent.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="InstaViv AI - Inculcating AI as a skill, at a young age. We design and deploy hands-on AI learning labs and courses for schools and colleges." />
     <title>InstaViv AI | AI as a Skill</title>
@@ -24,7 +24,7 @@
     <header class="navbar" id="navbar">
       <div class="container nav-container">
         <a href="#" class="logo">
-          <img src="/Instaviv_logo.jpeg" alt="InstaViv AI Logo" class="logo-img">
+          <img src="/Instaviv_logo_transparent.png" alt="InstaViv AI Logo" class="logo-img">
           <span class="logo-text">InstaViv AI</span>
         </a>
         <nav class="nav-links">
@@ -99,64 +99,8 @@
     <!-- 4. What We Offer / Courses -->
     <section class="courses section-padding" id="courses">
       <div class="container">
-        <h2 class="section-title reveal">Educational Courses</h2>
-        <div class="course-grid">
-          <!-- Avatar & Real-Time AI Lab -->
-          <div class="course-card glass-card reveal">
-            <div class="course-img-wrapper">
-              <img src="/course_avatar_1782815456531.png" alt="Avatar AI Lab" class="course-img">
-            </div>
-            <div class="course-info">
-              <h3>Avatar & Real-Time AI Lab</h3>
-              <p>Build interactive 3D AI avatars using LLM + Deep Fake tech. Modules include Lawyer LLM, CA LLM for GST, and Career Guidance.</p>
-            </div>
-          </div>
-          
-          <!-- Computer Vision Zone -->
-          <div class="course-card glass-card reveal delay-1">
-            <div class="course-img-wrapper">
-              <img src="/course_cv_1782815467304.png" alt="Computer Vision Zone" class="course-img">
-            </div>
-            <div class="course-info">
-              <h3>Computer Vision Zone</h3>
-              <p>Face-based heart-rate detection, line/wait-time detection, closed-eye detection, NLP & Interaction AI design.</p>
-            </div>
-          </div>
-
-          <!-- Smart Mirror Experiential AI -->
-          <div class="course-card glass-card reveal delay-2">
-            <div class="course-img-wrapper">
-              <img src="/course_mirror_1782815486377.png" alt="Smart Mirror" class="course-img">
-            </div>
-            <div class="course-info">
-              <h3>Smart Mirror Experiential AI</h3>
-              <p>Large rear-projection interactive smart mirror with LiDAR, thermal & camera sensors. Deploy and modify live AI models.</p>
-            </div>
-          </div>
-
-          <!-- RAG & Agentic AI -->
-          <div class="course-card glass-card reveal">
-            <div class="course-img-wrapper">
-              <img src="/course_rag_1782815497609.png" alt="RAG and Agentic AI" class="course-img">
-            </div>
-            <div class="course-info">
-              <h3>RAG & Agentic AI</h3>
-              <p>Upload custom data, build Vector DBs, create RAG pipelines, train & validate models directly from a UI.</p>
-            </div>
-          </div>
-
-          <!-- Full Deployment Infrastructure -->
-          <div class="course-card glass-card reveal delay-1">
-            <div class="course-img-wrapper">
-              <!-- ADD: deployment infra image -->
-              <div class="placeholder-img"><span>Deployment Infra</span></div>
-            </div>
-            <div class="course-info">
-              <h3>Full Deployment Infrastructure</h3>
-              <p>Learn end-to-end deployment of avatars and agents, real-time processing, and performance bottlenecks.</p>
-            </div>
-          </div>
-        </div>
+        <h2 class="section-title reveal" style="display: table; margin: 0 auto 3rem auto; left: 0; transform: none; font-weight: 800;">Educational Courses</h2>
+        <div id="courses-react-root"></div>
       </div>
     </section>
 
@@ -317,14 +261,21 @@
     </section>
 
     <!-- 12. Footer -->
-    <footer class="footer">
-      <div class="container footer-grid">
+    <footer class="footer section-padding" style="padding: 2.5rem 0 1rem 0;">
+      <div class="container footer-grid reveal">
         <div class="footer-brand">
-          <img src="/Instaviv_logo.jpeg" alt="InstaViv AI Logo" class="footer-logo">
-          <p>A sister company of Dataviv Technologies</p>
-          <!-- ADD: social icons -->
+          <a href="#" class="logo" style="margin-bottom: 1rem;">
+            <img src="/Instaviv_logo_transparent.png" alt="InstaViv AI Logo" class="logo-img">
+            <span class="logo-text">InstaViv AI</span>
+          </a>
+          <p class="footer-tagline" style="margin-bottom: 0.5rem;">A sister company of Dataviv Technologies</p>
+          <p class="footer-description" style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 90%;">We design and deploy hands-on AI learning labs and courses for schools and colleges, empowering the next generation with AI as a skill.</p>
           <div class="socials">
-            <span>[Social Icons Placeholder]</span>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="footer-links">
@@ -337,13 +288,12 @@
         </div>
         <div class="footer-contact">
           <h4>Contact Us</h4>
-          <!-- ADD: contact details -->
-          <p>[Email Placeholder]</p>
-          <p>[Phone Placeholder]</p>
-          <p>[Address Placeholder]</p>
+          <p>📧 hello@instaviv.ai</p>
+          <p>📞 +91 98765 43210</p>
+          <p>🏢 Dataviv Technologies<br>Mumbai, India</p>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom reveal delay-1">
         <p>&copy; 2026 InstaViv AI. All Rights Reserved.</p>
       </div>
     </footer>

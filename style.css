@@ -72,13 +72,13 @@ body {
   overflow: hidden;
 }
 
-/* Elegant, faint ambient lighting */
+/* Elegant, faint ambient lighting tailored for light theme */
 .aurora-bg::before {
   content: '';
   position: absolute;
   top: -20%; left: -10%;
   width: 50vw; height: 50vw;
-  background: radial-gradient(circle, rgba(0, 224, 199, 0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 224, 199, 0.03) 0%, transparent 70%);
   filter: blur(100px);
   pointer-events: none;
 }
@@ -88,7 +88,8 @@ body {
   position: absolute;
   bottom: -20%; right: -10%;
   width: 60vw; height: 60vw;
-  background: radial-gradient(circle, rgba(11, 19, 43, 0.3) 0%, transparent 70%);
+  /* Replaced the dark blue blob (rgba 11, 19, 43) with a very faint, clean accent color */
+  background: radial-gradient(circle, rgba(0, 158, 140, 0.02) 0%, transparent 70%);
   filter: blur(120px);
   pointer-events: none;
 }
@@ -335,7 +336,6 @@ a {
   height: 45px;
   object-fit: cover;
   border-radius: 6px;
-  mix-blend-mode: multiply; /* Makes white background transparent */
 }
 
 .nav-links {
@@ -777,21 +777,56 @@ a {
 
 
 /* 4. Courses */
+.courses {
+  background-color: #eef2f6; /* Distinct smooth, clean cool-grey shade to differentiate sections */
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .course-card {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--electric-cyan), var(--gold-accent));
+  opacity: 0;
+  transition: var(--transition-smooth);
+  z-index: 10;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 224, 199, 0.3);
+}
+
+.course-card:hover::before {
+  opacity: 1;
 }
 
 .course-img-wrapper {
   height: 220px;
   overflow: hidden;
+  position: relative;
 }
 
 .course-img {
@@ -802,7 +837,7 @@ a {
 }
 
 .course-card:hover .course-img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .course-info {
@@ -814,6 +849,12 @@ a {
   color: var(--electric-cyan);
   margin-bottom: 1rem;
   font-size: 1.4rem;
+}
+
+.course-info p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* 5. Labs & Infra */
@@ -992,51 +1033,133 @@ a {
 
 /* 12. Footer */
 .footer {
-  background: #050a17;
-  padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  background: var(--deep-navy-light);
+  position: relative;
+  overflow: hidden;
+  border-top: none;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.footer-logo {
-  width: 50px;
+/* Inherits .logo, .logo-img, .logo-text from navbar styling */
+
+.footer-brand .logo {
+  margin-bottom: 0.5rem;
+}
+
+
+
+.footer-tagline {
+  color: var(--text-secondary);
+  font-weight: 500;
   margin-bottom: 1rem;
-  mix-blend-mode: multiply; /* Makes white background transparent */
+  font-size: 0.9rem;
+}
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 224, 199, 0.05);
+  border: 1px solid var(--electric-cyan);
+  color: var(--electric-cyan);
+  font-family: var(--font-tech);
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: var(--transition-smooth);
+}
+
+.social-icon:hover {
+  background: var(--electric-cyan);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 224, 199, 0.4);
 }
 
 .footer-links h4, .footer-contact h4 {
   color: var(--electric-cyan);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-family: var(--font-display);
+  font-size: 1.05rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-links h4::after, .footer-contact h4::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: var(--electric-cyan);
+  border-radius: 2px;
 }
 
 .footer-links a {
   display: block;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   color: var(--text-secondary);
-  transition: color 0.3s;
+  font-family: var(--font-tech);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  position: relative;
+  width: fit-content;
 }
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--electric-cyan);
+  transition: width 0.3s ease;
+}
+
 .footer-links a:hover {
   color: var(--electric-cyan);
+}
+.footer-links a:hover::after {
+  width: 100%;
 }
 
 .footer-contact p {
   color: var(--text-secondary);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
 }
 
 .footer-bottom {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: var(--font-tech);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* Animations */
