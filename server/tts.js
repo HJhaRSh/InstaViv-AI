@@ -27,6 +27,13 @@ fs.createWriteStream = (path, options) => {
  */
 export async function generateSpeech(text) {
   try {
+    // Remove emojis from the text so the TTS engine doesn't try to read them
+    // Also remove markdown asterisks, hashes, and other symbols
+    const cleanText = text
+      .replace(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, '')
+      .replace(/[*#~_`]/g, '')
+      .trim();
+
     const tts = new EdgeTTS({ 
       voice: 'en-US-GuyNeural',
       lang: 'en-US',
@@ -35,7 +42,7 @@ export async function generateSpeech(text) {
     
     const uniqueId = `memory_stream_${Date.now()}_${Math.random()}`;
     
-    await tts.ttsPromise(text, uniqueId);
+    await tts.ttsPromise(cleanText, uniqueId);
     
     const audioBuffer = buffersMap.get(uniqueId);
     buffersMap.delete(uniqueId);
